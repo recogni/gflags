@@ -168,7 +168,7 @@ list (REMOVE_AT GFLAGS_NAMESPACE_SECONDARY 0)
 
 # cached build options when gflags is not a subproject, otherwise non-cached CMake variables
 # usage: gflags_define(BOOL <name> <doc> <default> [<subproject default>])
-gflags_define (BOOL BUILD_SHARED_LIBS          "Request build of shared libraries."                                       OFF OFF)
+gflags_define (BOOL BUILD_SHARED_LIBS          "Request build of shared libraries."                                       ON ON)
 gflags_define (BOOL BUILD_STATIC_LIBS          "Request build of static libraries (default if BUILD_SHARED_LIBS is OFF)." OFF ON)
 gflags_define (BOOL BUILD_gflags_LIB           "Request build of the multi-threaded gflags library."                      ON  OFF)
 gflags_define (BOOL BUILD_gflags_nothreads_LIB "Request build of the single-threaded gflags library."                     ON  ON)
